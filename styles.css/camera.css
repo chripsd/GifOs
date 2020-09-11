@@ -1,0 +1,53 @@
+.camera{
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.camtitle{
+    width: 854px;
+    height: 36px;
+    background-image: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 3px;
+}
+.camtitle p{
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 5px;
+}
+
+.camimg{
+    width: 832px;
+    height: 434px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.camicon{
+    display: flex;
+    height: 36px;
+    align-content: flex-end;
+    margin-top: 15px;
+}
+.icon{
+    width: 36px;
+    height: 34px;
+    background: var(--btn-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+    

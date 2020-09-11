@@ -1,0 +1,53 @@
+
+/* <!--tedencias--> */
+
+
+
+.trends{
+    grid-column: 2 / 3;
+    grid-row: 4; 
+    margin-top: 50px;
+    }
+
+.trends_title{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    margin-bottom: 20px;
+}
+
+.trends_title p{
+    padding-left: 10px;
+}
+
+
+.gallery2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gifos{
+    width: 288px;
+    height: auto;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+}
+
+
+
+
+.gifos p{
+    display: flex;
+    background-image: var(--background-color);
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 280px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+} 

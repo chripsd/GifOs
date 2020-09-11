@@ -1,0 +1,66 @@
+.capture{
+    width: 684px;
+    height: 386px;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+
+}
+
+.create_guifos {
+    width: 676px;
+    height: 24px;
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    background-image: var(--background-color);
+    
+}
+
+.create_guifos p{
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 4px;
+}
+
+
+.blanco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+
+.window{
+    margin: 10px;
+    width: auto;
+}
+
+
+.text{
+    margin: 10px;
+    width: 100px;
+    flex-grow: 1;
+
+}
+
+.btn_capture{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.square {
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+.square li{
+    padding: 5px;
+}
+

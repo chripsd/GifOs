@@ -1,0 +1,73 @@
+
+/* <!--seccion buscar--> */
+
+
+.search{
+    width: 1200px;
+    height: 99px;
+    background: #E6E6E6;    
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.search p {
+    height: 24px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-image: var(--background-color);
+    padding-left: 5px;
+    margin: 4px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-gif{
+    width: 1057px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    font-size: 16px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding: 0 10px;
+}
+
+
+.search-glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E6E6E6;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #B4B4B4;
+    width: 102px;
+    height: 36px;
+    margin: 7px 0 7px 7px;
+    cursor: pointer;
+}
+
+
+.search-glass img{
+    padding-right: 5px;
+}
+
+
+.search-glass:hover{
+background: #F7C9F3;
+color: black;
+}
+
+
+
+.look{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+

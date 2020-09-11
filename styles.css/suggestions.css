@@ -1,0 +1,104 @@
+
+/* <!--sugerencias--> */
+
+/* <!--ssugerencias--> */
+
+.suggestions{
+    width: 1200px;
+    grid-column: 2 / 3;
+    grid-row: 3; 
+    margin-top: 50px;
+    }
+
+.sug{
+    
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #FFFAFE;
+    border: 1px solid #E6BBE2;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+    margin-bottom: 20px;
+}
+
+.sug p{
+    padding-left: 5px;
+    font-size: 14px;
+    color: #110038;
+   
+
+}
+
+
+.gallery{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sug_one{
+    width: 288px;
+    height: 313px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.sug_title{
+    display: flex;
+    justify-content: space-between;
+    background-image: var(--background-color);
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 280px;
+    height: 24px;
+    align-items: center;
+    margin: 4px;
+    margin-bottom: 0;
+}
+
+.sug_title p{
+    padding-left: 10px;
+}
+
+.clouse{
+    width: 16px;
+    height: 14px;
+    cursor: pointer;
+    margin-right:10px ;
+}
+
+.see{
+    z-index: 1;
+    width: 81px;
+    height: 34px;
+    background: #4180F6;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Chakra Petch';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:220px;
+    left: 20px;
+}
+
+.sug_img{
+    padding: 5px;
+    padding-top: 2px;
+    position: relative;
+}
+
+.sug_gif{
+    width: 280px;
+    height: 280px;
+}
+
+
+.sug_gif2{
+    width: 542px;
+    height: 298px;
+}
