@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crea tu propio guif</title>
-    <link rel="stylesheet" href="/styles.css/header.css">
     <link rel="stylesheet" href="/styles.css/index.css">
     <link rel="stylesheet" href="/styles.css/create.css">
     <link rel="stylesheet" href="/styles.css/search.css">
@@ -12,7 +11,9 @@
     <link rel="stylesheet" href="/styles.css/trends.css">
     <link rel="stylesheet" href="/styles.css/ressearch.css">
     <link rel="stylesheet" href="/styles.css/capture.css">
-    <link rel="stylesheet" href="/styles.css/crearguifos.css">
+    <link rel="stylesheet" href="/styles.css/camera.css">
+
+
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 
 <!-- fonts/google -->
@@ -32,18 +33,19 @@
 
 <div class="container">
     <section class="create_g">
+        <a href="index.html">
         <img src="assets/arrow.svg" alt="window" style="padding-right:20px ;">
         <img src="assets/gifOF_logo.png" alt="logo"></a>
     </section> 
 
 <!--seccion capture-->  
 
-<section class="capture">
-    <div class="create_guifos">
+<section class="capture" id="capture">
+    <div class="capture_guifos">
         <p>Crear Guifos</p>
     </div>
 
-        <section class="blanco">
+        <section class="capture_text">
 
             <div class="window">
             <img src="assets/window img.png" alt="window">
@@ -61,8 +63,11 @@
                 ¿Quieres comenzar a crear tu <b>guifo</b> ahora?
                 </p>
             <div class="btn_capture">
-                <div class="btn_navbar">Cancelar</div>
-                <div class="btn_navbar">Comenzar</div>
+                <div class="btn_cancel">
+                <a href="index.html"> Cancelar </a></div>
+
+
+                <div class="btn_comenzar" id="comenzar" value="activar">Comenzar</div>
             </div>
         </div>
     </section>
@@ -70,51 +75,28 @@
 </section>
 
 
-<!--seccion sugerencias-->  
+<section class="camera" id="activar">
+    <div class="camtitle">
+    <p>Un Chequeo Antes de Empezar</p>
+    <div class="clouse"><img src="assets/button3.svg" alt="lupa"></a></div>
+    </div>
+
+    <div class="camimg">
+        <video class="video" id="video" autoplay="true"></video>
+    </div>
+
+    <div class="camicon" id="captura">
+    <div class="icon"><img src="assets/camera.svg" alt="camera"></a></div>
+    <input type="button" class="btn_captura" value="Capturar">
+    </div> 
+</section> 
+
+<!--seccion mis guifos-->  
 
 <section class="suggestions">
-
     <section class="sug">
-        <p>Hoy te sugerimos:</p>
+        <p>Mis Guifos:</p>
     </section>
-
-    <section class="gallery">
-        
-        <section class="sug_one">
-            <section class="sug_title">
-                <p>#Jonathanvanness</p>
-                <button class="clouse"><img src="assets/button3.svg" alt="lupa"></a></button>
-            </section>
-            <img src="" alt="imagen" width="280px" height="280px" id="imagen0"></a>
-             <button class="see">Ver más…</button>
-        </section>
-        
-            <section class="sug_one">
-                <section class="sug_title">
-                    <p>#SailorMercury</p>
-                    <button class="clouse"><img src="assets/button3.svg" alt="lupa"></a></button>
-                </section>
-                <img src="" alt="imagen" width="280px" height="280px" id="imagen0"></a>
-                <button class="see">Ver más…</button>
-            </section>
-
-                <section class="sug_one">
-                    <section class="sug_title">
-                        <p>#FabFive</p>
-                        <button class="clouse"><img src="assets/button3.svg" alt="lupa"></a></button>
-                    </section>
-                    <img src="" alt="imagen" width="280px" height="280px" id="imagen0"></a>
-                    <button class="see">Ver más…</button>
-                </section>
-
-                    <section class="sug_one">
-                        <section class="sug_title">
-                            <p>#Unicorns&Rainbows</p>
-                            <button class="clouse"><img src="assets/button3.svg" alt="lupa"></a></button>
-                        </section>
-                        <img src="" alt="imagen" width="280px" height="280px" id="imagen0"></a>
-                        <button class="see">Ver más…</button>
-                    </section>
 
     </section>
 </section>    
@@ -124,10 +106,8 @@
 
 
 <!-- js -->
-     <script src="script/gif.js"></script>
      <script src="script/buscar.js"></script>
      <script src="script/permise.js"></script>
      <script src="script/selector.js"></script>
-     <!-- <script>permisoscam()</script> -->
 </body>
 </html>

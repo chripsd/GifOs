@@ -1,8 +1,0 @@
-
-/* <!--seccion crear --> */
-.create_g{
-    display: flex;
-    align-items: center;
-    grid-column: 2 / 3;
-    grid-row: 1;
-}

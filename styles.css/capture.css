@@ -1,14 +1,18 @@
+/* <!--seccion ventana crear guifos--> */
+
 .capture{
     width: 684px;
     height: 386px;
     grid-column: 2 / 3;
     grid-row: 2;
+    justify-self: center;
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    margin-top: 50px;
 
 }
 
-.create_guifos {
+.capture_guifos {
     width: 676px;
     height: 24px;
     margin: 4px;
@@ -18,14 +22,13 @@
     
 }
 
-.create_guifos p{
+.capture_guifos p{
     font-size: 14px;
     color: #FFFFFF;
     padding-left: 4px;
 }
 
-
-.blanco{
+.capture_text{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,18 +36,15 @@
     justify-content: center;
 }
 
-
 .window{
     margin: 10px;
     width: auto;
 }
 
-
 .text{
     margin: 10px;
     width: 100px;
     flex-grow: 1;
-
 }
 
 .btn_capture{
@@ -53,14 +53,60 @@
     justify-content: flex-end;
 }
 
-
 .square {
     padding: 10px;
     text-decoration: none;
 }
 
-
 .square li{
     padding: 5px;
 }
 
+.btn_cancel{
+    display: flex;
+    font-family: 'Chakra Petch';
+    width: 144px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: #FFF4FD 100%;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+.btn_cancel a{
+    color: black;
+}
+
+.btn_comenzar{
+    display: flex;
+    font-family: 'Chakra Petch';
+    width: 144px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background: #f7c9f3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    margin-right: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.btn_comenzar:hover{
+    
+    background:  #997D97;
+
+}
+
+
+.btn_cancel:hover{
+    
+    background:  #997D97;
+
+}

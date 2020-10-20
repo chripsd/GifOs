@@ -21,6 +21,8 @@ catch(error){
   };
 
   randomGif();
+
+  
 ///////////crerar elementos 
   var gallery = document.getElementById("primero")
   function cardsGeneretor(i){
@@ -32,10 +34,7 @@ catch(error){
     let sug_imgp = document.createElement("p")
     let sug_imgrandon = document.createElement("img")
     let see = document.createElement("div")
-    let btn1 = document.createElement("button")
-    btn1.addEventListener("click", button)
     
-
 /////////// organizan esos elementos 
 gallery.appendChild(sug_one)
 sug_one.appendChild(sug_title)
@@ -46,8 +45,6 @@ sug_img.appendChild(sug_imgp)
 sug_img.appendChild(sug_imgrandon)
 sug_img.appendChild(see)
 
-
-
 /////////// se le aturubyen o incluyen las clases 
 sug_one.classList.add("sug_one")
 sug_img.classList.add("sug_img")
@@ -56,14 +53,9 @@ see.classList.add("see")
 sug_titleclouse.classList.add("clouse")
 sug_imgrandon.classList.add("sug_gif")
 
-
-
 /////////// se incluyen id 
 sug_imgrandon.id = `random${i}`
 sug_titlep.id = `numeral${i}`
-
-
-
 /////////// se incluyen elementos 
 
 sug_titleclouse.setAttribute("src","assets/button3.svg")
@@ -73,8 +65,15 @@ see.setAttribute("alt", "Ver más...")
 
 console.log(i);
 
-
 }
 
 
+let seeMore = document.getElementsByClassName('see')
+for (let i = 0; i < seeMore.length; i++) {
 
+    seeMore[i].addEventListener('click', openGiphyPage)
+
+    function openGiphyPage() {
+        window.open("https://giphy.com/")
+    }
+}

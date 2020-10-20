@@ -1,6 +1,4 @@
-
 /* <!--seccion buscar--> */
-
 
 .search{
     width: 1200px;
@@ -37,7 +35,6 @@
     padding: 0 10px;
 }
 
-
 .search-glass{
     display: flex;
     justify-content: center;
@@ -57,12 +54,10 @@
     padding-right: 5px;
 }
 
-
 .search-glass:hover{
-background: #F7C9F3;
-color: black;
-}
-
+    background: #F7C9F3;
+    color: black;
+    }
 
 
 .look{

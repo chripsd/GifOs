@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crea tu propio guif</title>
-    <link rel="stylesheet" href="/styles.css/header.css">
     <link rel="stylesheet" href="/styles.css/index.css">
     <link rel="stylesheet" href="/styles.css/create.css">
     <link rel="stylesheet" href="/styles.css/search.css">
     <link rel="stylesheet" href="/styles.css/suggestions.css">
     <link rel="stylesheet" href="/styles.css/trends.css">
     <link rel="stylesheet" href="/styles.css/ressearch.css">
+    <link rel="stylesheet" href="/styles.css/submenu.css">
+
 
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
 
@@ -21,7 +22,7 @@
 
 <body>
 <header>
-<section class="main" id="color">
+<section class="main">
     <p class="title">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
 </section>
 </header>
@@ -29,26 +30,20 @@
 <!--botones-->
 
 <div class="container">
-    <section class="create">
+    <section class="container_menu">
         <img src="assets/gifOF_logo.png" id="logo">
-            <section class= "btn">
-                <div class="btn_navbar">Crear Guifos</div>
-                <nav class="btn_topic">
-                    <ul class="menu">
-                        <li><a href="#"></a>Elegir tema</a>   
-                        <ul class="submenu">
-                        <li class="day" value="Mostrar" onclick="day();">Sailor day</li>
-                        <li class="day" value="ocultar" onclick="nigth();">Sailor nigth</li>
-                        </ul></li>
-                        
-                    </ul>
-                </nav>
-                <span class="icon_open">
-                            <img src="assets/dropdown.svg" alt="logo">
-                            </span> 
-                    <section class="guifos">
-                    <a href="misgifos.html"><u>M</u>is Guifos</a>
-                    </section>
+            <section class= "btn_menu">
+                <div class="btn_crear"><a href="crear.html"><p>Crear Guifos</p></a></div>
+                <div class="btn_tema">
+                    <div class="menu"><p>Elegir tema</p></div>
+                    <div class="icon_open">
+                    <img src="assets/dropdown.svg" alt="icono"></div> 
+                    <div class="submenu">
+                        <div class="day" value="Mostrar" onclick="day();"><span class="linea">S</span>ailor day</div>
+                        <div class="day" value="ocultar" onclick="nigth();"><span class="linea">S</span>ailor nigth</div>
+                    </div>
+                </div>
+                    <a class="btn_guifos" href="misgifos.html"><span class="linea">M</span>is Guifos</a>
             </section>
     </section>     
 
@@ -57,120 +52,52 @@
     <section class="search">
         <p>Buscar</p>
         <div class="look">
-            <input class="search-gif" id="search" type="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" type="text"/>
-            <button class="search-glass" id="btnSearch">
+            <input class="search-gif" autocomplete="off" id="search"
+            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <button type="submit" class="search-glass">
                 <img src="assets/lupa.svg" alt="lupa">Buscar</a>
             </button>
         </div>
+        <div class="search_menu"></div>
+ 
     </section>
+
+<!--seccion resultados-->    
+
 
 <!--seccion sugerencias-->    
 
 <section class="suggestions">
     <p class="sug">Hoy te sugerimos:</p>
-    
-    <section class="gallery" id="primero">
-         <a id="button" href="https://www.youtube.com/"></a>
-        <!-- <section class="sug_one">
-            <div class="sug_title">
-                <p id="numeral1"></p>
-                <img class="clouse" src="assets/button3.svg" alt="cerrar"></a>
-            </div>
-            <div class="sug_img">
-                <p id="numeral2"></p>
-                <img src="" alt="random" width="280px" height="280px" id="random0"></a>
-                <div class="see">Ver más…</div>
-            </div>
-        </section> -->
-        
-        <!-- <section class="sug_one">
-            <div class="sug_title">
-                <p id="numeral3"></p>
-                <div class="clouse"><img src="assets/button3.svg" alt="cerrar"></a></div>
-            </div>
-            <div class="sug_img">
-                <img src="" alt="random" width="280px" height="280px" id="random1"></a>
-            </div>
-        </section>
-
-        <section class="sug_one">
-            <div class="sug_title">
-                <p id="numeral4"></p>
-                <div class="clouse"><img src="assets/button3.svg" alt="cerrar"></a></div>
-            </div>
-            <div class="sug_img">
-                <img src="" alt="random" width="280px" height="280px" id="random2"></a>
-                
-            </div>
-        </section>
-
-        <section class="sug_one">
-            <div class="sug_title">
-                <div class="clouse"><img src="assets/button3.svg" alt="cerrar"></a></div>
-            </div>
-            <div class="sug_img">
-                <img src="" alt="random" width="280px" height="280px" id="random3"></a>
-                
-            </div>
-        </section> -->
-
-    </section>
+    <section class="gallery" id="primero"></section>
 </section> 
 
-<!--seccion tendencias-->    
 
+<!--seccion tendencias-->    
 <section class="trends">
     <section class="trends_title">
         <p>Tendencias</p>
     </section> 
 
-    <section class="gallery2" id="resultado">
-
-    <section class="gifos">
-        <div class="sug_img">
-        <img src="" alt="imagen" width="280px" height="280px" id="imagen0">
-        <p>#wink #puppie</p> 
-        </div>      
-    </section>
-<!-- 
-    <section>
-        <img src="" alt="imagen" width="542px" height="298px" id="imagen1">
-    </section>
-
-    <section>
-        <img src="" alt="imagen" width="280px" height="298px" id="imagen2">
-    </section>
-
-    </section>
-
-    <section class="gallery">
-
-        <section>
-            <img src="" alt="imagen" width="280px" height="298px" id="imagen3">
-        </section>
-    
-        <section>
-            <img src="" alt="imagen" width="280px" height="298px" id="imagen4">
-        </section>
-    
-        <section>
-            <img src="" alt="imagen" width="280px" height="298px" id="imagen5">
-        </section>
-
-        <section>
-            <img src="" alt="imagen" width="280px" height="298px" id="imagen6">
-        </section>
-
-       
-    </section> -->
-
+    <section class="trendings" id="trendings"></section>
 </section>
 
+
+
+
+<!--seccion tendencias-->    
+<!-- <section class="trends">
+    <section class="trends_title">
+        <p>Tendencias</p>
+    </section> 
+
+    <section class="gallery2" id="resultado"></section>
+</section> -->
 
 </div>
 
 <!-- js -->
-     <script src="script/gif.js"></script>
+
      <script src="script/buscar.js"></script>
      <script src="script/permise.js"></script>
      <script src="script/selector.js"></script>

@@ -10,3 +10,4 @@ function nigth(){
     logo.setAttribute("src","./assets/gifOF_logo_dark.png");
     
 }
+

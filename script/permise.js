@@ -1,83 +1,12 @@
+let capture = document.getElementById("capture")
+let camera = document.getElementById("activar")
 
-// let data = 'https://api.giphy.com/v1';
-// let ApiKey = 'SrF7Mwom6EWdYipqgJ9CU2gng0kUxUFl';
-
-
-
-// async function permisoscam(){
-
-//     let capture = document.getElementById('captura').value;
-//     console.log('capture', capture);
-    
-//     var gumPromise = navigator.mediaDevices.getUserMedia({
-//     video:true,
-// });
-
-//         var permiso = await gumPromise
-//         console.log(permiso)
-
-//         let recorder = new RecordRTCPromisesHandler(permiso, {
-//             type: 'video',
-//             save: function(fileName) {},
-//         });
-//         recorder.startRecording();
-
-//         const sleep = m => new Promise(r => setTimeout(r, m));
-//         await sleep(10000);
-
-//         await recorder.stopRecording();
-//         let blob = await recorder.getBlob();
-//         var mime = blob.type
-
-//         console.log(mime)
-
-//         let response = await fetch(`${data}/gifs/search?q=${value}&api_key=${ApiKey}&limit=10&rating=G&lang=en`);
-//         console.log(response);
-
-// }
-
-// let btnCaptura = document.getElementById('captura');
-// btnCaptura.addEventListener('click', searchGif);
-
-
-
-
-
-
-// async function permisoscam(){
-
-//     var gumPromise = navigator.mediaDevices.getUserMedia({
-//         video:true,
-//     });
-//     var permiso = await gumPromise
-//     console.log(permiso)
-    
-//     let recorder = new RecordRTCPromisesHandler(permiso, {
-//         type: 'video',
-//         save: function(fileName) {},
-//     });
-//     recorder.startRecording();
-    
-//     const sleep = m => new Promise(r => setTimeout(r, m));
-//     await sleep(10000);
-    
-//     await recorder.stopRecording();
-//     let blob = await recorder.getBlob();
-//     var mime = blob.type
-    
-//     console.log(mime)
-
-//     let response = await fetch(`${data}/gifs/search?q=${value}&api_key=${ApiKey}&limit=10&rating=G&lang=en`);
-//       console.log(response);
-    
-//     }
-    
-//     function captura(){
-//     btnCaptura.addEventListener('click', captura);
-
-    
-// }
-
+let btncomenzar = document.getElementById("comenzar")
+btncomenzar.addEventListener("click" ,()=>{
+    capture.style.display="none"
+    camera.style.display="block"
+})
+ 
 navigator.mediaDevices.getUserMedia({audio: false, video: true }).then((stream)=>{
     console.log(stream)
 
@@ -85,6 +14,46 @@ navigator.mediaDevices.getUserMedia({audio: false, video: true }).then((stream)=
     video.srcObject = stream
 }).catch((error)=>console.log(error))
 
-
 let btnCaptura = document.getElementById('captura');
 btnCaptura.addEventListener('click', searchGif);
+
+console.log();
+
+
+
+
+// ///////////crerar elementos
+// let cam = document.getElementById("activar")
+// function cardsCamera(){
+// cam = document.getElementById("activar")
+// let camtitle = document.createElement("div")
+// let camtitlep = document.createElement("p")
+// let clouse = document.createElement("div")
+// let clouseimg = document.createElement("img")
+// let caming = document.createElement("div")
+// let camingvideo = document.createElement("video")
+// let camicon = document.createElement("div")
+// let icon = document.createElement("div")
+// let iconimg = document.createElement("img")
+// let iconbutton = document.createElement("input")
+
+// console.log(cam)
+// console.log(camtitle)
+// cam.appendChild(camtitle)
+// camtitle.appendChild(camtitlep)
+// camtitle.appendChild(clouse)
+// clouse.appendChild(clouseimg)
+// caming.appendChild(camingvideo)
+// camicon.appendChild(icon)
+// icon.appendChild(iconimg)
+// icon.appendChild(iconbutton)
+
+// /////////// se le aturubyen o incluyen las clases 
+// cam.classList.add("camera")
+// camtitle.classList.add("camtitlep")
+// clouse.classList.add("clouseimg")
+// camimg.classList.add("video")
+
+// cam.style.display="block"
+
+// }
