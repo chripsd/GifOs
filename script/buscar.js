@@ -2,7 +2,7 @@ let data = 'https://api.giphy.com/v1';
 let ApiKey = 'SrF7Mwom6EWdYipqgJ9CU2gng0kUxUFl';
 
 async function searchGif() {
-    let value = document.getElementById('search').value;
+  let value = document.getElementById('search').value;
     let response = await fetch(`${data}/gifs/search?q=${value}&api_key=${ApiKey}&limit=11&rating=G&lang=en`);
     if(response.ok) {
       const resdata = await response.json()
@@ -24,7 +24,38 @@ async function searchGif() {
     
   };
 
+let APIurl = "https://api.giphy.com/v1/gifs/";
+let APIkey = "SrF7Mwom6EWdYipqgJ9CU2gng0kUxUFl";
 
+// Resultados de busqueda
+
+// Autocompletar
+
+function resultadoSugerido() {
+  autoComp = document.querySelector(".autocomplete-content");
+  autoComp.style.display = "block";
+  search = document.getElementById("search").value;
+  if (search === "") {
+    autoComp.style.display = "none";
+  }
+  fetch(`${APIurl}search?q=${search}&api_key=${APIkey}&limit=3`)
+    .then(response => {
+      return response.json();
+    })
+    .then(data => {
+      autoComp.innerHTML = "";
+      for (let i = 0; i < data.data.length; i++) {
+        imgTITLE = data.data[i].title;
+        if (imgTITLE !== "") {
+          imgURL = data.data[i].bitly_url;
+          sug = document.createElement("p");
+          autoComp.appendChild(sug);
+          innerS = `<a href="${imgURL}" target='_blank'>${imgTITLE}</a>`;
+          sug.innerHTML = innerS;
+        }
+      }
+    });
+}
 
 // let btnSearch = document.getElementById('btnSearch');
 // btnSearch.addEventListener('click',()=> {
@@ -32,6 +63,7 @@ async function searchGif() {
 // searchGif();
 
 // });
+
 
 
 ///////////crerar elementos
@@ -67,4 +99,3 @@ sug_imgp.id = `titulos${i}`
 console.log(i);
 
 }
-

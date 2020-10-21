@@ -53,11 +53,15 @@
         <p>Buscar</p>
         <div class="look">
             <input class="search-gif" autocomplete="off" id="search"
-            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
-            <button type="submit" class="search-glass">
+            placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" oninput="resultadoSugerido()">
+            <button type="submit" class="search-glass" onclick="getSearchResults()">
                 <img src="assets/lupa.svg" alt="lupa">Buscar</a>
+
             </button>
         </div>
+        <div class="autocomplete-content">
+        </div>
+
         <div class="search_menu"></div>
  
     </section>
@@ -103,6 +107,6 @@
      <script src="script/selector.js"></script>
      <script src="script/tendencias.js"></script>
      <script src="script/ramdon.js"></script>
-     <script>permisoscam()</script>
+     <!-- <script>permisoscam()</script> -->
 </body>
 </html>

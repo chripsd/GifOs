@@ -38,13 +38,12 @@
     display: flex;
     justify-items: center;
     justify-content: center;
+    
 }
-
 
 .gifos img:hover {
     background: #E6E6E6;
     box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-    
   }
 
 .gifos:hover .sughove {
@@ -52,17 +51,16 @@
   }
 
   .sughove{
-    border: 1px solid #110038;
+    border: 1px dotted #110038;
     box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-    border-style: dotted;
       width: 288px;
       height: 298px;
       position: absolute;
-      z-index: 1;
       visibility: hidden;
       display: flex;
       justify-content: center;
       align-items: flex-end;
+      
   }
 
   .sughovep{
@@ -91,14 +89,12 @@
 
 
 .sug_cards{
-  padding: 5px;
-  position: relative;
- 
+  padding: 2px;
+  position: relative; 
 }
-
 
 .sug_cards1{
   width: 100%;
   height: 100%;
-  
 }
+

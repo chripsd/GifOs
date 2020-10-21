@@ -14,10 +14,12 @@ navigator.mediaDevices.getUserMedia({audio: false, video: true }).then((stream)=
     video.srcObject = stream
 }).catch((error)=>console.log(error))
 
-let btnCaptura = document.getElementById('captura');
-btnCaptura.addEventListener('click', searchGif);
+
+// let btnCaptura = document.getElementById('captura');
+// btnCaptura.addEventListener('click', searchGif);
 
 console.log();
+
 
 
 
